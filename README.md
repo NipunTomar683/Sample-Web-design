@@ -23,7 +23,9 @@ No build step or package installation is required:
 1. Download or clone this repository.
 2. Open `index.html` in a modern browser.
 
-Google Fonts, GSAP, ScrollTrigger, and Locomotive Scroll are loaded from external CDNs, so an internet connection is needed for those assets and enhanced scrolling animations. The page itself remains a static HTML file.
+Google Fonts, GSAP, ScrollTrigger, and Locomotive Scroll are loaded from external CDNs, so an internet connection is needed for those assets and enhanced scrolling animations. The site itself is static and can be opened locally.
+
+The page content is in `index.html`, its styles are in `styles.css`, and its interactive behavior is in `script.js`.
 
 ## Reservation form
 
