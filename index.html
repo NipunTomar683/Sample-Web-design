@@ -1,236 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#17251e">
-  <meta name="description" content="A little further from the everyday. Discover seasonal cooking, thoughtful wine and the quiet art of a good evening at Maison Solenne.">
-  <title>Maison Solenne — A little further from the everyday</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2e9">
+  <meta name="description" content="Fresh seasonal cooking, thoughtful drinks, and a warm welcome at SN Restaurant. Explore our menu or book your table.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SN Restaurant — Good food, good company">
+  <meta property="og:description" content="Seasonal plates, generous hospitality, and a seat at our table.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <meta property="og:url" content="https://example.com/">
+  <title>SN Restaurant — Good food, good company</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "SN Restaurant",
+    "description": "Seasonal cooking and a warm welcome.",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "+91-98765-43210",
+    "priceRange": "₹₹",
+    "servesCuisine": ["Seasonal", "European"],
+    "menu": "https://example.com/#menu",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 Olive Lane",
+      "addressLocality": "Your City",
+      "addressRegion": "Your State",
+      "postalCode": "000000",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "12:00",
+        "closes": "22:00"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <div data-scroll-container>
-  <header class="header">
-    <a class="brand" href="#top" aria-label="Maison Solenne home">
-      <span class="brand-mark" aria-hidden="true">S</span>
-      <span class="brand-name">MAISON SOLENNE</span>
-    </a>
-    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
-    </button>
-    <nav class="nav" id="site-nav" aria-label="Main navigation">
-      <a href="#story">Our story</a>
-      <a href="#menu">The menu</a>
-      <a href="#experience">The experience</a>
-      <a class="nav-book" href="#reserve">Reserve a table</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 3a14 14 0 0 1-7-7l3-2-2-5Z"/></symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M20.5 11.6a8.6 8.6 0 0 1-12.7 7.6L3 20.5l1.3-4.6a8.6 8.6 0 1 1 16.2-4.3Z"/><path d="M8.2 7.8c.3-.5.6-.5.9-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4 0 .6l-.6.7c-.2.2-.2.4 0 .6.6 1 1.5 1.9 2.6 2.5.2.1.4.1.5-.1l.8-1c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.4 0 .3-.2 1.2-.8 1.7-.5.5-1.3.8-2.1.6-1.2-.3-2.8-1-4.3-2.4-1.2-1.1-2-2.5-2.3-3.5-.3-1 .1-2 .5-2.6Z"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="icon-left" viewBox="0 0 24 24"><path d="M20 12H5m6 6-6-6 6-6"/></symbol>
+    <symbol id="icon-right" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#home" aria-label="SN Restaurant home"><span class="brand-mark">S</span><span class="brand-name">SN <span>RESTAURANT</span></span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#story">Our story</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#contact">Find us</a>
+      <a class="nav-book" href="#reserve">Book a table</a>
+      <a class="nav-call" href="tel:+919876543210" data-phone-link><svg class="icon"><use href="#icon-phone"/></svg><span>Call</span></a>
     </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode"><svg class="icon"><use href="#icon-sun"/></svg></button>
   </header>
 
-  <main>
-    <section class="hero" id="top">
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="A warmly lit restaurant table set for dinner"></div>
+      <div class="hero-shade"></div>
       <div class="hero-content">
-        <p class="eyebrow">A neighbourhood table, a world of flavour</p>
-        <h1>A little further<br>from the <em>everyday.</em></h1>
-        <p class="hero-copy">Seasonal cooking, thoughtful wine, and the kind of evening that stays with you. Find your place at our table.</p>
-        <a class="button" href="#reserve">Come join us
-          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 10h13M10 4l6 6-6 6"/></svg>
-        </a>
+        <p class="eyebrow">Seasonal plates · Easy evenings</p>
+        <h1 id="hero-title">A little further<br>from the <em>everyday.</em></h1>
+        <p class="hero-copy">Good food, thoughtful ingredients, and the kind of welcome that makes you stay a little longer.</p>
+        <div class="hero-actions"><a class="button button-light" href="#menu">View menu <svg class="icon"><use href="#icon-arrow"/></svg></a><a class="button button-glass" href="#reserve">Book a table</a></div>
       </div>
-      <div class="hero-bottom">
-        <span class="scroll-cue">Scroll to discover</span>
-        <span class="hero-hours">Tuesday – Sunday<br>12:00 – 22:00</span>
+      <div class="hero-bottom"><span>Thoughtful food, made with care</span><span>Tue – Sun · 12:00 – 22:00</span></div>
+      <a class="hero-call" href="tel:+919876543210" data-phone-link><svg class="icon"><use href="#icon-phone"/></svg><span>Call us</span></a>
+    </section>
+
+    <section class="trust-strip" aria-label="Restaurant highlights">
+      <div><span class="trust-icon">✳</span><p><strong>Made fresh</strong><span>Prepared with care</span></p></div>
+      <div><span class="trust-icon">♧</span><p><strong>Seasonal produce</strong><span>Inspired by the market</span></p></div>
+      <a href="#reserve"><span class="trust-icon">♡</span><p><strong>A warm welcome</strong><span>Book your visit</span></p></a>
+      <div><span class="trust-icon">★</span><p><strong>Your verified rating</strong><span>Add a real review-platform score</span></p></div>
+      <div><span class="trust-icon">＋</span><p><strong>Your guest count</strong><span>Add a verified visits total</span></p></div>
+      <div><span class="trust-icon">✓</span><p><strong>Quality promise</strong><span>Add verified food-safety credentials</span></p></div>
+    </section>
+
+    <section class="section story-section" id="story">
+      <div class="section-wrap story-grid">
+        <div class="story-photo photo-frame"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1100&amp;q=82" alt="Candlelit table set with plates and glasses for dinner" loading="lazy"><span class="photo-note">Good things<br>take time.</span></div>
+        <div class="story-copy">
+          <p class="eyebrow">A place to slow down</p><h2>Food tastes better<br>when it feels like <em>home.</em></h2>
+          <p>SN Restaurant began with a simple idea: bring people together around honest, seasonal food. We cook with ingredients chosen for their flavor, work with the seasons, and make room at the table for everyone.</p>
+          <p>From a quick lunch to a long celebration, every plate is prepared with care and served with a generous welcome.</p>
+          <div class="story-signoff"><span class="signoff-mark">S</span><p><strong>Your chef's name</strong><span>Chef &amp; host · Replace with your story</span></p></div>
+          <a class="text-link" href="#menu">Get to know the menu <svg class="icon"><use href="#icon-arrow"/></svg></a>
+        </div>
       </div>
     </section>
 
-    <section class="intro" id="story">
-      <div class="section-wrap intro-grid">
-        <div class="intro-image">
-          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85" alt="An intimate candlelit dinner table set for guests" loading="lazy">
-          <div class="image-caption">Gather<br>around<br>something good.</div>
-        </div>
-        <div class="intro-copy">
-          <span class="eyebrow">A place to slow down</span>
-          <h2>Good food.<br><em>Good company.</em><br>Nothing more.</h2>
-          <p>Maison Solenne began with a simple thought: a meal should feel like being welcomed in. We bring the best of the season to the table, work with people who care about what they grow, and leave plenty of room for one more glass.</p>
-          <p>Come for a long lunch, a small celebration, or just because it’s Tuesday. There’s always a seat for you.</p>
-          <a class="text-link" href="#experience">A little about us
-            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 10h13M10 4l6 6-6 6"/></svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="menu-section" id="menu">
+    <section class="section menu-section" id="menu">
       <div class="section-wrap">
-        <div class="section-heading">
-          <div><span class="eyebrow">A taste of the season</span><h2>Made with <em>intention.</em></h2></div>
-          <p>Our menu moves with the market. Here are a few things we’re loving right now.</p>
+        <div class="section-heading"><div><p class="eyebrow">Fresh from our kitchen</p><h2>A menu with <em>good taste.</em></h2></div><p>Sample dishes and prices below—swap in your current menu before publishing.</p></div>
+        <div class="menu-tabs" role="group" aria-label="Menu categories">
+          <button class="menu-tab is-active" type="button" aria-pressed="true" data-category="all">All dishes</button>
+          <button class="menu-tab" type="button" aria-pressed="false" data-category="starters">Starters</button>
+          <button class="menu-tab" type="button" aria-pressed="false" data-category="mains">Main course</button>
+          <button class="menu-tab" type="button" aria-pressed="false" data-category="desserts">Desserts</button>
+          <button class="menu-tab" type="button" aria-pressed="false" data-category="drinks">Drinks</button>
         </div>
-        <div class="dishes" role="region" aria-label="Featured dishes, moving from left to right" tabindex="0">
-          <div class="dish-track">
-            <div class="dish-group">
-              <article class="dish-card">
-                <div class="dish-image">
-                  <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=850&q=85" alt="Seasonal roasted vegetables with fresh herbs" loading="lazy">
-                  <span class="dish-tag">From the garden</span>
-                </div>
-                <div class="dish-info"><div><h3>Garden, gathered</h3><p>Heirloom tomato · basil · whipped ricotta</p></div><span class="dish-price">₹ 680</span></div>
-              </article>
-              <article class="dish-card">
-                <div class="dish-image">
-                  <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=850&q=85" alt="Beautifully plated seasonal chef's dish" loading="lazy">
-                  <span class="dish-tag">A guest favourite</span>
-                </div>
-                <div class="dish-info"><div><h3>Slow Sunday</h3><p>Wood-roasted chicken · lemon · garden herbs</p></div><span class="dish-price">₹ 1,250</span></div>
-              </article>
-              <article class="dish-card">
-                <div class="dish-image">
-                  <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=850&q=85" alt="A delicate dessert with fresh berries and cream" loading="lazy">
-                  <span class="dish-tag">Save a little room</span>
-                </div>
-                <div class="dish-info"><div><h3>The last little thing</h3><p>Vanilla crème · late-season berries</p></div><span class="dish-price">₹ 520</span></div>
-              </article>
-              <article class="dish-card">
-                <div class="dish-image">
-                  <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=850&q=85" alt="Fresh pasta with seasonal vegetables and herbs" loading="lazy">
-                  <span class="dish-tag">Made by hand</span>
-                </div>
-                <div class="dish-info"><div><h3>Sunday market pasta</h3><p>Hand-cut pappardelle · wild mushroom · sage</p></div><span class="dish-price">₹ 890</span></div>
-              </article>
-              <article class="dish-card">
-                <div class="dish-image">
-                  <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=850&q=85" alt="A fresh salad with crisp greens and seasonal produce" loading="lazy">
-                  <span class="dish-tag">Bright &amp; fresh</span>
-                </div>
-                <div class="dish-info"><div><h3>Greens in the sun</h3><p>Little gem · pear · toasted hazelnut</p></div><span class="dish-price">₹ 640</span></div>
-              </article>
-              <article class="dish-card">
-                <div class="dish-image">
-                  <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=850&q=85" alt="A golden tart served with a delicate cream" loading="lazy">
-                  <span class="dish-tag">A sweet finish</span>
-                </div>
-                <div class="dish-info"><div><h3>Golden hour tart</h3><p>Brown butter · stone fruit · crème fraîche</p></div><span class="dish-price">₹ 560</span></div>
-              </article>
-            </div>
-            <div class="dish-group" aria-hidden="true">
-              <article class="dish-card">
-                <div class="dish-image">
-                  <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=850&q=85" alt="" loading="lazy">
-                  <span class="dish-tag">From the garden</span>
-                </div>
-                <div class="dish-info"><div><h3>Garden, gathered</h3><p>Heirloom tomato · basil · whipped ricotta</p></div><span class="dish-price">₹ 680</span></div>
-              </article>
-              <article class="dish-card">
-                <div class="dish-image">
-                  <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=850&q=85" alt="" loading="lazy">
-                  <span class="dish-tag">A guest favourite</span>
-                </div>
-                <div class="dish-info"><div><h3>Slow Sunday</h3><p>Wood-roasted chicken · lemon · garden herbs</p></div><span class="dish-price">₹ 1,250</span></div>
-              </article>
-              <article class="dish-card">
-                <div class="dish-image">
-                  <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=850&q=85" alt="" loading="lazy">
-                  <span class="dish-tag">Save a little room</span>
-                </div>
-                <div class="dish-info"><div><h3>The last little thing</h3><p>Vanilla crème · late-season berries</p></div><span class="dish-price">₹ 520</span></div>
-              </article>
-              <article class="dish-card">
-                <div class="dish-image">
-                  <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=850&q=85" alt="" loading="lazy">
-                  <span class="dish-tag">Made by hand</span>
-                </div>
-                <div class="dish-info"><div><h3>Sunday market pasta</h3><p>Hand-cut pappardelle · wild mushroom · sage</p></div><span class="dish-price">₹ 890</span></div>
-              </article>
-              <article class="dish-card">
-                <div class="dish-image">
-                  <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=850&q=85" alt="" loading="lazy">
-                  <span class="dish-tag">Bright &amp; fresh</span>
-                </div>
-                <div class="dish-info"><div><h3>Greens in the sun</h3><p>Little gem · pear · toasted hazelnut</p></div><span class="dish-price">₹ 640</span></div>
-              </article>
-              <article class="dish-card">
-                <div class="dish-image">
-                  <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=850&q=85" alt="" loading="lazy">
-                  <span class="dish-tag">A sweet finish</span>
-                </div>
-                <div class="dish-info"><div><h3>Golden hour tart</h3><p>Brown butter · stone fruit · crème fraîche</p></div><span class="dish-price">₹ 560</span></div>
-              </article>
-            </div>
-          </div>
+        <div class="menu-grid">
+          <article class="menu-card" data-category="starters"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&amp;fit=crop&amp;w=760&amp;q=80" alt="Colorful seasonal vegetables with fresh herbs" loading="lazy"><span class="food-mark veg" aria-label="Vegetarian">V</span><span class="menu-badge">Bestseller</span></div><div class="menu-info"><div><h3>Garden, gathered</h3><p>Heirloom tomato, whipped ricotta, basil</p></div><strong>₹ 480</strong></div></article>
+          <article class="menu-card" data-category="starters"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=760&amp;q=80" alt="Fresh greens and vegetables in a bowl" loading="lazy"><span class="food-mark veg" aria-label="Vegetarian">V</span></div><div class="menu-info"><div><h3>Market greens</h3><p>Crisp leaves, pear, toasted hazelnut</p></div><strong>₹ 420</strong></div></article>
+          <article class="menu-card" data-category="mains"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&amp;fit=crop&amp;w=760&amp;q=80" alt="Handmade pasta with seasonal vegetables and herbs" loading="lazy"><span class="food-mark veg" aria-label="Vegetarian">V</span><span class="menu-badge special">Chef's special</span></div><div class="menu-info"><div><h3>Sunday market pasta</h3><p>Hand-cut pappardelle, mushroom, sage</p></div><strong>₹ 890</strong></div></article>
+          <article class="menu-card" data-category="mains"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&amp;fit=crop&amp;w=760&amp;q=80" alt="Roasted chicken served with vegetables" loading="lazy"><span class="food-mark non-veg" aria-label="Non-vegetarian">N</span><span class="menu-badge">Bestseller</span></div><div class="menu-info"><div><h3>Slow Sunday chicken</h3><p>Wood-roasted chicken, lemon, garden herbs</p></div><strong>₹ 1,250</strong></div></article>
+          <article class="menu-card" data-category="desserts"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&amp;fit=crop&amp;w=760&amp;q=80" alt="Berry dessert layered with cream" loading="lazy"><span class="food-mark veg" aria-label="Vegetarian">V</span></div><div class="menu-info"><div><h3>The last little thing</h3><p>Vanilla crème, late-season berries</p></div><strong>₹ 520</strong></div></article>
+          <article class="menu-card" data-category="desserts"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&amp;fit=crop&amp;w=760&amp;q=80" alt="Golden pastry served with a delicate cream" loading="lazy"><span class="food-mark veg" aria-label="Vegetarian">V</span><span class="menu-badge special">Chef's special</span></div><div class="menu-info"><div><h3>Golden hour tart</h3><p>Brown butter, stone fruit, crème fraîche</p></div><strong>₹ 560</strong></div></article>
+          <article class="menu-card" data-category="drinks"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&amp;fit=crop&amp;w=760&amp;q=80" alt="Refreshing citrus drink with mint and ice" loading="lazy"><span class="food-mark veg" aria-label="Vegetarian">V</span></div><div class="menu-info"><div><h3>Garden spritz</h3><p>Citrus, fresh herbs, sparkling water</p></div><strong>₹ 280</strong></div></article>
+          <article class="menu-card" data-category="drinks"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&amp;fit=crop&amp;w=760&amp;q=80" alt="Coffee served in a ceramic cup" loading="lazy"><span class="food-mark veg" aria-label="Vegetarian">V</span></div><div class="menu-info"><div><h3>Something warm</h3><p>Ask us about today's coffee and tea</p></div><strong>₹ 180</strong></div></article>
         </div>
-        <p class="menu-note">A small glimpse of what’s cooking. Menus change with the season and the market.</p>
+        <div class="section-cta"><p>Have an allergy or dietary question? We're happy to help.</p><a class="button button-dark" href="https://wa.me/919876543210" data-whatsapp data-message="Hello! I have a question about the menu.">Ask us on WhatsApp <svg class="icon"><use href="#icon-arrow"/></svg></a></div>
       </div>
     </section>
 
-    <section class="quote-band" aria-label="A note from our kitchen">
-      <div class="quote-content">
-        <div class="quote-mark" aria-hidden="true">“</div>
-        <blockquote>The best meals aren’t really about the food. They’re about who you’re with, and how long you stay.</blockquote>
-        <cite>A note from our kitchen</cite>
-      </div>
-    </section>
-
-    <section class="experience" id="experience">
-      <div class="section-wrap experience-grid">
-        <div class="experience-copy">
-          <span class="eyebrow">The Maison feeling</span>
-          <h2>Come as you are.<br><em>Stay a while.</em></h2>
-          <p>We like our tables full, our glasses generous, and our evenings unhurried. Whether you’re here for an occasion or no occasion at all, we’ll make you feel at home.</p>
-          <div class="experience-list">
-            <div class="experience-item"><strong>Thoughtful plates</strong><span>Seasonal, local, and made with care.</span></div>
-            <div class="experience-item"><strong>Good wine</strong><span>Old friends and new discoveries.</span></div>
-            <div class="experience-item"><strong>Easy evenings</strong><span>Warm welcomes, never a dress code.</span></div>
-            <div class="experience-item"><strong>Room for everyone</strong><span>Little celebrations, big gatherings.</span></div>
-          </div>
-        </div>
-        <div class="experience-image">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=85" alt="Warm, welcoming restaurant interior ready for dinner" loading="lazy">
+    <section class="signature-section" id="specials">
+      <div class="section-wrap">
+        <div class="section-heading light-heading"><div><p class="eyebrow">Straight from the pass</p><h2>House <em>favorites.</em></h2></div><div class="slider-controls"><button class="slider-button" type="button" data-slider="signature" data-direction="-1" aria-label="Previous signature dishes"><svg class="icon"><use href="#icon-left"/></svg></button><button class="slider-button" type="button" data-slider="signature" data-direction="1" aria-label="Next signature dishes"><svg class="icon"><use href="#icon-right"/></svg></button></div></div>
+        <div class="signature-slider" id="signature-slider" tabindex="0" aria-label="Signature dishes">
+          <article class="signature-card"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&amp;fit=crop&amp;w=1100&amp;q=82" alt="Fresh handmade pasta topped with seasonal herbs" loading="lazy"><div><span class="eyebrow">Made by hand</span><h3>Sunday market pasta</h3><p>Wild mushroom · brown butter · sage</p><a href="#reserve" class="text-link">Come try it <svg class="icon"><use href="#icon-arrow"/></svg></a></div></article>
+          <article class="signature-card"><img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&amp;fit=crop&amp;w=1100&amp;q=82" alt="Golden roasted chicken with seasonal sides" loading="lazy"><div><span class="eyebrow">A guest favorite</span><h3>Slow Sunday</h3><p>Wood-roasted chicken · lemon · garden herbs</p><a href="#reserve" class="text-link">Save me a seat <svg class="icon"><use href="#icon-arrow"/></svg></a></div></article>
+          <article class="signature-card"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&amp;fit=crop&amp;w=1100&amp;q=82" alt="Fresh berry dessert with cream" loading="lazy"><div><span class="eyebrow">A little sweetness</span><h3>The last little thing</h3><p>Vanilla crème · late-season berries</p><a href="#reserve" class="text-link">Leave room for it <svg class="icon"><use href="#icon-arrow"/></svg></a></div></article>
         </div>
       </div>
     </section>
 
-    <section class="booking" id="reserve">
-      <div class="section-wrap booking-grid">
-        <div class="booking-copy">
-          <span class="eyebrow">Your table is waiting</span>
-          <h2>Make an evening<br>of <em>it.</em></h2>
-          <p>Tell us when you’d like to come by. We’ll be in touch to make it official.</p>
-          <div class="contact-detail"><span>Find us</span><p>12 Olive Lane, Your City</p></div>
-          <div class="contact-detail"><span>Give us a ring</span><a href="tel:+919876543210">+91 98765 43210</a></div>
+    <section class="section gallery-section" id="gallery">
+      <div class="section-wrap">
+        <div class="section-heading"><div><p class="eyebrow">A peek around the table</p><h2>Little moments, <em>well spent.</em></h2></div><p>Tap a photo to take a closer look. Replace these images with your own restaurant photos.</p></div>
+        <div class="gallery-grid">
+          <button class="gallery-item gallery-tall" type="button" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1600&amp;q=88" aria-label="View candlelit dinner table photo"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="Candlelit restaurant table ready for dinner" loading="lazy"></button>
+          <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&amp;fit=crop&amp;w=1600&amp;q=88" aria-label="View seasonal vegetable dish photo"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="Seasonal vegetables and fresh herbs on a plate" loading="lazy"></button>
+          <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1600&amp;q=88" aria-label="View restaurant interior photo"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="Inviting restaurant interior with set tables" loading="lazy"></button>
+          <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&amp;fit=crop&amp;w=1600&amp;q=88" aria-label="View handmade pasta photo"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="Handmade pasta with herbs and seasonal vegetables" loading="lazy"></button>
+          <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&amp;fit=crop&amp;w=1600&amp;q=88" aria-label="View berry dessert photo"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="Berry dessert finished with cream" loading="lazy"></button>
         </div>
-        <form class="booking-form" id="booking-form">
-          <div class="form-field"><label for="guest-name">Your name</label><input id="guest-name" name="name" type="text" placeholder="How should we address you?" autocomplete="name" required></div>
-          <div class="form-field"><label for="guest-email">Email address</label><input id="guest-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
-          <div class="form-field"><label for="visit-date">Date</label><input id="visit-date" name="date" type="date" required></div>
-          <div class="form-field"><label for="guest-count">Your party</label>
-            <select id="guest-count" name="guests" required>
-              <option value="" disabled selected>Select guests</option>
-              <option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option><option>7+ guests</option>
-            </select>
-          </div>
-          <button class="button" type="submit">Request a table
-            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 10h13M10 4l6 6-6 6"/></svg>
-          </button>
-          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        <div class="section-cta"><p>Make a few memories of your own.</p><a class="button button-dark" href="#reserve">Join us for a meal <svg class="icon"><use href="#icon-arrow"/></svg></a></div>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="reviews">
+      <div class="section-wrap">
+        <div class="section-heading"><div><p class="eyebrow">Kind words</p><h2>Notes from the <em>table.</em></h2></div><div class="slider-controls"><button class="slider-button" type="button" data-slider="reviews" data-direction="-1" aria-label="Previous review"><svg class="icon"><use href="#icon-left"/></svg></button><button class="slider-button" type="button" data-slider="reviews" data-direction="1" aria-label="Next review"><svg class="icon"><use href="#icon-right"/></svg></button></div></div>
+        <p class="placeholder-note">Review placeholders below—replace with genuine customer feedback before publishing. Star values are examples, not verified ratings.</p>
+        <div class="review-slider" id="reviews-slider" aria-live="polite">
+          <article class="review-card"><p class="review-stars" aria-label="Example rating: 5 out of 5">★★★★★</p><blockquote>“Add a real guest review about a dish, a visit, or the welcome they received.”</blockquote><p class="review-author">Guest name <span>Verified customer review</span></p></article>
+          <article class="review-card"><p class="review-stars" aria-label="Example rating: 5 out of 5">★★★★★</p><blockquote>“Replace this sample with a genuine quote, and get permission before sharing it.”</blockquote><p class="review-author">Guest name <span>Verified customer review</span></p></article>
+          <article class="review-card"><p class="review-stars" aria-label="Example rating: 5 out of 5">★★★★★</p><blockquote>“Use a real review here. Never publish a made-up rating or customer endorsement.”</blockquote><p class="review-author">Guest name <span>Verified customer review</span></p></article>
+        </div>
+        <div class="review-dots" aria-label="Review slide controls"><button type="button" aria-label="Show review 1" aria-current="true"></button><button type="button" aria-label="Show review 2" aria-current="false"></button><button type="button" aria-label="Show review 3" aria-current="false"></button></div>
+        <div class="reviews-cta"><a class="text-link" href="#reserve">Come make your own memories <svg class="icon"><use href="#icon-arrow"/></svg></a></div>
+      </div>
+    </section>
+
+    <section class="offer-section" id="offer">
+      <div class="offer-image" role="img" aria-label="A table filled with a shared meal"></div>
+      <div class="offer-card"><p class="eyebrow">A little something extra</p><h2>Your special<br>goes <em>here.</em></h2><p>Sample offer: add your real daily special or combo deal, terms, and end date before publishing.</p><a class="button button-light" href="#reserve">Ask about today's special <svg class="icon"><use href="#icon-arrow"/></svg></a></div>
+    </section>
+
+    <section class="section reservation-section" id="reserve">
+      <div class="section-wrap reservation-grid">
+        <div class="reservation-copy"><p class="eyebrow">Your table is waiting</p><h2>Let's make it<br>a <em>good evening.</em></h2><p>Send your preferred date and time on WhatsApp. We'll reply to confirm availability.</p><div class="reservation-trust"><span>✳ Made fresh to order</span><span>♡ Thoughtful hospitality</span></div><a class="text-link" href="tel:+919876543210" data-phone-link>Prefer to call? Give us a ring <svg class="icon"><use href="#icon-arrow"/></svg></a></div>
+        <form class="reservation-form" id="booking-form">
+          <div class="form-heading"><span class="eyebrow">Plan your visit</span><h3>Request a table</h3></div>
+          <label for="guest-name">Your name</label><input id="guest-name" name="name" autocomplete="name" placeholder="How should we address you?" required>
+          <label for="guest-phone">Phone number</label><input id="guest-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+ ]{7,18}" placeholder="+91 98765 43210" required>
+          <div class="form-row"><div><label for="visit-date">Date</label><input id="visit-date" name="date" type="date" required></div><div><label for="visit-time">Time</label><select id="visit-time" name="time" required><option value="" selected disabled>Select time</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option></select></div></div>
+          <label for="guest-count">Number of guests</label><select id="guest-count" name="guests" required><option value="" selected disabled>Select guests</option><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option><option>7+ guests</option></select>
+          <button class="button button-dark form-submit" type="submit">Continue on WhatsApp <svg class="icon"><use href="#icon-whatsapp"/></svg></button><p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+          <p class="form-disclaimer">Your request is not confirmed until the restaurant replies.</p>
         </form>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-wrap contact-grid">
+        <div class="contact-copy"><p class="eyebrow">Come find us</p><h2>We saved you<br>a <em>seat.</em></h2><address><strong>SN Restaurant</strong><span>12 Olive Lane, Your City, Your State 000000</span></address><div class="contact-actions"><a class="button button-light" href="tel:+919876543210" data-phone-link><svg class="icon"><use href="#icon-phone"/></svg> Call the restaurant</a><a class="button button-whatsapp" href="https://wa.me/919876543210" data-whatsapp data-message="Hello! I'd like to ask about visiting SN Restaurant."><svg class="icon"><use href="#icon-whatsapp"/></svg> WhatsApp us</a></div><div class="hours"><span>Tuesday – Sunday</span><strong>12:00 PM – 10:00 PM</strong><span>Monday · Closed</span></div><a class="map-link" href="https://maps.google.com/?q=12+Olive+Lane+Your+City" target="_blank" rel="noopener noreferrer">Open directions in Google Maps <svg class="icon"><use href="#icon-arrow"/></svg></a></div>
+        <div class="map-frame"><iframe title="Map showing the sample restaurant address" src="https://maps.google.com/maps?q=12%20Olive%20Lane%2C%20Your%20City&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><span class="map-caption">Replace this sample location with your restaurant's address.</span></div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">MAISON SOLENNE</span></a>
-    <span class="footer-note">Made for lingering. © <span id="current-year"></span> Maison Solenne.</span>
-    <div class="socials"><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a><a href="#reserve">Get in touch</a></div>
+  <footer class="site-footer">
+    <div class="footer-main"><a class="brand footer-brand" href="#home"><span class="brand-mark">S</span><span class="brand-name">SN <span>RESTAURANT</span></span></a><p>Good food, good company, and always room at the table.</p><a class="social-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram"><svg class="icon"><use href="#icon-instagram"/></svg></a></div>
+    <div class="footer-bottom"><nav aria-label="Footer navigation"><a href="#story">Our story</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#reserve">Book a table</a><a href="#contact">Contact</a></nav><span>© <span id="current-year"></span> SN Restaurant. All rights reserved.</span><a href="#home" class="back-top">Back to top ↑</a></div>
   </footer>
-  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-  <script src="script.js"></script>
+  <a class="floating-order" href="https://wa.me/919876543210" data-whatsapp data-message="Hello! I'd like to place an order." aria-label="Order now on WhatsApp"><svg class="icon"><use href="#icon-whatsapp"/></svg><span>Order now</span></a>
+  <nav class="mobile-actions" aria-label="Quick actions">
+    <a href="tel:+919876543210" data-phone-link><svg class="icon"><use href="#icon-phone"/></svg><span>Call</span></a>
+    <a href="#reserve"><span class="action-book">＋</span><span>Book</span></a>
+    <a href="https://wa.me/919876543210" data-whatsapp data-message="Hello! I'd like to place an order."><svg class="icon"><use href="#icon-whatsapp"/></svg><span>Order</span></a>
+  </nav>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer"><button class="lightbox-close" type="button" aria-label="Close photo"><svg class="icon"><use href="#icon-close"/></svg></button><img alt=""></dialog>
+  <script src="script.js" defer></script>
 </body>
 </html>
